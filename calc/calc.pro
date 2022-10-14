@@ -10,22 +10,22 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    mainwindow.cpp \
     plot.cpp \
     qcustomplot.cpp \
     smartcalccontroller.cpp \
-    smartcalcmodel.cpp \
-    smartcalcview.cpp
+    smartcalcmodel.cpp
 
 HEADERS += \
+    mainwindow.h \
     plot.h \
     qcustomplot.h \
     smartcalccontroller.h \
-    smartcalcmodel.h \
-    smartcalcview.h
+    smartcalcmodel.h
 
 FORMS += \
-    plot.ui \
-    smartcalcview.ui
+    mainwindow.ui \
+    plot.ui
 #INCLUDEPATH += $$QT_PROJECT_DIR/QCustomPlot/
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin

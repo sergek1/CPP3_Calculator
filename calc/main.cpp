@@ -1,4 +1,4 @@
-#include "smartcalcview.h"
+#include "mainwindow.h"
 #include <QApplication>
 
 

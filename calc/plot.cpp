@@ -1,5 +1,5 @@
 #include "plot.h"
-#include "smartcalcview.h"
+#include "mainwindow.h"
 #include "ui_plot.h"
 #include <string>
 #include <cmath>

@@ -1,5 +1,5 @@
-#ifndef SMARTCALCVIEW_H
-#define SMARTCALCVIEW_H
+#ifndef MAINWINDOW_H
+#define MAINWINDOW_H
 
 #include <QMainWindow>
 
@@ -55,4 +55,4 @@ private:
     SmartCalcController *controller_;
 };
 
-#endif // SMARTCALCVIEW_H
+#endif // MAINWINDOW_H
