@@ -3,8 +3,8 @@
 
 <img src="images/calc1.png" alt="network_route" width="500"/>
 
-<img src="images/calc2.png" alt="network_route" width="1000"/>
+<img src="images/calc3.png" alt="network_route" width="1000"/>
 
 Кредитный калькулятор с возможностью выбора типа платежей (аннуитетный и дифференцированный)
 
-<img src="images/calc3.png" alt="network_route" width="1000"/>
+<img src="images/calc2.png" alt="network_route" width="1000"/>
