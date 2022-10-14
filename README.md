@@ -7,4 +7,4 @@
 
 Кредитный калькулятор с возможностью выбора типа платежей (аннуитетный и дифференцированный)
 
-<img src="images/calc2.png" alt="network_route" width="1000"/>
+<img src="images/calc2.png" alt="network_route" width="500"/>
