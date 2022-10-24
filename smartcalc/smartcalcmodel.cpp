@@ -49,13 +49,13 @@ void SmartCalcModel::CalculateCredit(double credit_amount, int months, double in
                                      int credit_type) {
     interest_rate = interest_rate / 100 / 12;
     double month_payment;
+    std::stringstream stream;
+    stream.precision(2);
+    stream << std::fixed;
     if (credit_type == 0) {
         month_payment =
             credit_amount * (interest_rate + (interest_rate / (pow(1 + interest_rate, months) - 1)));
         month_payment = std::round(month_payment * 100.0) / 100.0;
-        std::stringstream stream;
-        stream.precision(2);
-        stream << std::fixed;
         stream << month_payment;
         month_payment_ = stream.str();
         total_payment_ = month_payment * months;
@@ -64,9 +64,6 @@ void SmartCalcModel::CalculateCredit(double credit_amount, int months, double in
             month_payment =
                 credit_amount / months + (credit_amount - (credit_amount / months) * i) * interest_rate;
             month_payment = std::round(month_payment * 100) / 100;
-            std::stringstream stream;
-            stream.precision(2);
-            stream << std::fixed;
             stream << month_payment;
             if (i == 0) {
                 month_payment_ = stream.str();
