@@ -1,4 +1,4 @@
-QT       += core gui printsupport
+QT       += widgets core gui printsupport
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -10,22 +10,22 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp \
-    plot.cpp \
-    qcustomplot.cpp \
+    plotview.cpp \
+    qcustomplot/qcustomplot.cpp \
     smartcalccontroller.cpp \
-    smartcalcmodel.cpp
+    smartcalcmodel.cpp \
+    smartcalcview.cpp
 
 HEADERS += \
-    mainwindow.h \
-    plot.h \
-    qcustomplot.h \
+    plotview.h \
+    qcustomplot/qcustomplot.h \
     smartcalccontroller.h \
-    smartcalcmodel.h
+    smartcalcmodel.h \
+    smartcalcview.h
 
 FORMS += \
-    mainwindow.ui \
-    plot.ui
+    plotview.ui \
+    smartcalcview.ui
 #INCLUDEPATH += $$QT_PROJECT_DIR/QCustomPlot/
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
